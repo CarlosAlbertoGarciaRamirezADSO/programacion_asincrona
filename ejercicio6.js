@@ -5,14 +5,13 @@
 
 
 
-arreglo = [5, 3, 8, 7, 9];
+arreglo = [5, 3, 8, 7, 9];// creamos un arreglo
 
-
-function callback(x) {
-  if (x % 2===0) {
-    return true
+function callback(x) { // creamos una function que recibe como parametro el arreglo
+  if (x % 2===0) { //si un elemento de el arreglo es divisible por 0
+    return true //return true
   }
-  return false
+  return false // de otra forma return false
 }
 
-console.log(arreglo.some(callback))
+console.log(arreglo.some(callback)) //el some devuelve true si una de las llamadas devuelve true

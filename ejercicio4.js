@@ -6,12 +6,12 @@
 
 
 
-let arreglo = [5, 10, 5, 15, 20, 5]
+let arreglo = [5, 10, 5, 15, 20, 5]// creamos un arreglo
 
-function callback(x) {
-  if (x === 5) {
-    return true;
+function callback(x) { //creamos una funcion que va a recibir como parametro el arreglo
+  if (x === 5) { // si un elemento de el arreglo es igual a 5 
+    return true; // retorna true
   }
 }
-console.log(`arreglo original ${arreglo}`);
-console.table(arreglo.filter(callback))
+console.log(`arreglo original ${arreglo}`);//hacemos una interpolacion y mostramos el arreglo original
+console.table(arreglo.filter(callback))//con el filter ingresamos al arreglo y como parametro le pasamos el callback
