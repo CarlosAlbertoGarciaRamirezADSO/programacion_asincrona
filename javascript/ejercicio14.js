@@ -2,16 +2,16 @@
 // diga "Operación completada". Utiliza async/await. 
 
 
-async function esperar(){
-    return await new Promise((resolve)=>{
-        setTimeout(() => {
-            resolve("se resolvio")
-        }, 1000);
-    })
+async function esperar() {
+  return await new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("se resolvio")
+    }, 1000);
+  })
 }
 
 
 console.log(esperar()
-    .then((resultado)=>{
-        console.log(resultado);
-    }));
+  .then((resultado) => {
+    console.log(resultado);
+  }));
